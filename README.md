@@ -19,4 +19,10 @@ Emily Kline
 Michael Cosand
 Samy Mackey
 
+## Rough Task Break Down
+Two people will work on the JavaScript
+One person will work on the HTML
+One person will work on the CSS
+All four members of the group will contribute to the files and help one another during the process.
+This is a rough breakdown and will likely change when we have a more detailed outline of what we need to include in our code. 
 
