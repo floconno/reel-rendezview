@@ -10,19 +10,18 @@ As a user, I want to enter my birth year into the site that will then display di
 https://www.figma.com/file/02YTAv7z1DxMD1pPceiu83/Untitled?type=design&node-id=0%3A1&mode=design&t=3tahMYfGCaLUEASp-1
 
 ## API's Being Used
-YouTube Data API: https://developers.google.com/youtube/v3
-TMDB API: https://developer.themoviedb.org/docs 
+* YouTube Data API: https://developers.google.com/youtube/v3
+* TMDB API: https://developer.themoviedb.org/docs 
 
 ## Collaborators
-Faith O'Connor
-Emily Kline
-Michael Cosand
-Samy Mackey
+* Faith O'Connor
+* Emily Kline
+* Michael Cosand
+* Samy Mackey
 
 ## Rough Task Break Down
-Two people will work on the JavaScript
-One person will work on the HTML
-One person will work on the CSS
-All four members of the group will contribute to the files and help one another during the process.
-This is a rough breakdown and will likely change when we have a more detailed outline of what we need to include in our code. 
+* Two people will work on the JavaScript
+* One person will work on the HTML
+* One person will work on the CSS
+* All four members of the group will contribute to the files and help one another during the process.This is a rough breakdown and will likely change when we have a more detailed outline of what we need to include in our code. 
 
