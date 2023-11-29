@@ -1,9 +1,18 @@
 
-/* <form id="birthYearForm">
+/* <form id="birth-year-form">
     <label for="birthYear">Enter Birth Year:</label>
-    <input type="number" id="birthYear" name="birthYear"/>
+    <input type="number" id="birth-year" name="birthYear"/>
     <button type="button" onclick="fetchMovies()">Generate Movies</button>
 </form> */
+
+var birthYearFormEl = document.querySelector('#birth-year-form');
+var yearInputEl = document.querySelector('#birth-year');
+var movieContainerEl = document.querySelector('#movie-container');
+
+var formSubmitHandler = function (event) {
+    event.preventDefault();
+}
+
 const options = {
     method: 'GET',
     headers: {
@@ -13,7 +22,7 @@ const options = {
   };
 
 var generateMovies = function fetchMovies() {
-    var birthYear = document.getElementById('birthYear').value;
+    var birthYear = document.getElementById('birth-year').value;
     var apiUrl = `https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&primary_release_year=${birthYear}&sort_by=popularity.desc`
 
     fetch(apiUrl, options).then(function (response) {
