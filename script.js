@@ -25,16 +25,17 @@ var generateMovies = function fetchMovies() {
     var birthYear = document.getElementById('birth-year').value;
     var apiUrl = `https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&primary_release_year=${birthYear}&sort_by=popularity.desc`
 
-    fetch(apiUrl, options).then(function (response) {
-        if (response.ok) {
-            response.json().then(function (data) {
-                displayMovies(data);
-            });
-        } else {
-            alert('Error: ' + response.statusText);
-        }
-    })
-    .catch(function (error) {
-        alert('Unable to generate movies');
-    });
+    fetch(apiUrl, options)
+        .then(response.json())
+        .then(data => {
+            var movies = data.results;
+
+            for (let i = 0; i < 5; i++) {
+                var movie = movies[i];
+                var title = movie.title;
+            }
+        })
+        .catch(function (error) {
+            alert('Unable to generate movies');
+        });
 };
