@@ -9,10 +9,6 @@ var birthYearFormEl = document.querySelector('#birth-year-form');
 var yearInputEl = document.querySelector('#birth-year');
 var movieContainerEl = document.querySelector('#movie-container');
 
-var formSubmitHandler = function (event) {
-    event.preventDefault();
-}
-
 const options = {
     method: 'GET',
     headers: {
@@ -39,3 +35,27 @@ var generateMovies = function fetchMovies() {
             alert('Unable to generate movies');
         });
 };
+
+formSubmitHandler.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    var user = {
+        birthYear
+    };
+    
+    let userInputs = JSON.parse(localStorage.getItem('userInputs')) || [];
+    
+    userInputs.push(user);
+    
+    if (userInputs.length > 5) {
+        userInputs = userInputs.slice(-5); 
+    }
+
+    localStorage.setItem('userInputs', JSON.stringify(userInputs));
+
+    birthYear = '';
+
+    displayUserInputs(userInputs);
+});
+
+
