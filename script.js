@@ -44,7 +44,6 @@ formSubmitHandler.addEventListener('submit', function(event) {
     };
 
     let userInputs = JSON.parse(localStorage.getItem('userInputs')) || [];
-    
     userInputs.push(user);
     
     if (userInputs.length > 5) {
@@ -52,15 +51,12 @@ formSubmitHandler.addEventListener('submit', function(event) {
     }
 
     localStorage.setItem('userInputs', JSON.stringify(userInputs));
-
     birthYear = '';
-
     displayUserInputs(userInputs);
 });
 
 function displayUserInputs(userInputs) {
     var lastFiveInputs = document.querySelector('#lastFiveInputs');
-
     lastFiveInputs.innerHTML = '';
 
     for (var user of userInputs) {
