@@ -42,7 +42,7 @@ formSubmitHandler.addEventListener('submit', function(event) {
     var user = {
         birthYear
     };
-    
+
     let userInputs = JSON.parse(localStorage.getItem('userInputs')) || [];
     
     userInputs.push(user);
@@ -57,5 +57,18 @@ formSubmitHandler.addEventListener('submit', function(event) {
 
     displayUserInputs(userInputs);
 });
+
+function displayUserInputs(userInputs) {
+    var lastFiveInputs = document.querySelector('#lastFiveInputs');
+
+    lastFiveInputs.innerHTML = '';
+
+    for (var user of userInputs) {
+        var listItem = document.createElement('li');
+        listItem.textContent = `Years Searched: ${user}`;
+        lastFiveInputs.appendChild(listItem);
+    }
+}
+
 
 
