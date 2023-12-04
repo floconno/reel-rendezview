@@ -70,5 +70,9 @@ function displayUserInputs(userInputs) {
     }
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+    var userInputs = JSON.parse(localStorage.getItem('userInputs')) || [];
+    displayUserInputs(userInputs);
+});
 
 
