@@ -31,9 +31,6 @@ var generateMovies = function fetchMovies() {
                 var title = movie.title;
             }
         })
-        .catch(function (error) {
-            alert('Unable to generate movies');
-        });
 };
 
 formSubmitHandler.addEventListener('submit', function(event) {
