@@ -2,27 +2,51 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <link rel="stylesheet" href="./style.css" />
-    <title>ReelRendezView</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link rel="stylesheet" href="./style.css" />
+  <title>ReelRendezView</title>
 </head>
 
 <body class="flex-column min-100-vh">
-    <header class="hero">
-        <div class="image">
-            <img src="cancel this subscription.jpg" alt="ReelRendezView Header Art">
-        </div>
-        <h1 class="app-title">
-            ReelRendezView
-        </h1>
-        <p>Find movies based on the year you were born!
-        </p>
-    </header>
+  <header class="hero">
+      <div class="image">
+          <img src="cancel this subscription.jpg" alt="ReelRendezView Header Art">
+      </div>
+      <h1 class="app-title">
+          ReelRendezView
+      </h1>
+      <p>Find movies based on the year you were born!
+      </p>
+  </header>
 
+
+  <main class="flex-row justify-space-between">
+    <div class="col-12 col-md-4">
+      <div class="card">
+        <h3 class="card-header text-uppercase">Search By Year</h3>
+          <label class="form-label" for="birth-year">Year</label>
+          <input name="year" id="birth-year" type="text" autofocus="true" class="form-input" /> <!-- Updated input ID -->
+          <button type="submit" class="btn" onclick="generateAndDisplayMovies()">Submit</button>
+      </div>
+
+      <div class="card">
+        <h3 class="card-header text-uppercase">Previous Searches</h3>
+        <div id="language-buttons" class="card-body">
+          <div id="recent-movie-container"></div> <!-- Container for recent searches -->
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-8">
+      <h2 class="subtitle">Movies List:</h2>
+      <div id="movie-container"></div>
+    </div>
+  </main>
+
+<<<<<<< HEAD
 
     <main class="flex-row justify-space-between">
         <div class="col-12 col-md-4">
@@ -52,6 +76,9 @@
 
     <script src="./assets/js/homepage.js"></script>
     <script src="./sofetch.js"></script>
+=======
+  <script src="./js/homepage.js"></script>
+>>>>>>> 0ab41a76708b896f781725e324ea7c9a9be50341
 </body>
 
 </html>
