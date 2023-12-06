@@ -28,6 +28,5 @@ Faith worked on the TMDB API call and the local storage in JavaScript and added 
 https://floconno.github.io/reel-rendezview/
 
 ## Screenshot of site:
-![Alt Text](assets/screenshotreel-rendezview_ (2).png)
-
-
+![IMG_2931 (1)](https://github.com/floconno/reel-rendezview/assets/147213828/e1982b9e-14a0-4e1c-b95e-84e8110dc339)
+![IMG_2930](https://github.com/floconno/reel-rendezview/assets/147213828/37c748df-7192-4e85-8d26-138de87e83da)
